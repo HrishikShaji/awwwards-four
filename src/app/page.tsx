@@ -1,10 +1,12 @@
+import FixedBackgroundGrid from "@/components/FixedBackgroundGrid4";
 import StackedCards from "@/components/StackedCards";
 import Image from "next/image";
 
 export default function Home() {
 	return (
 		<div >
-			<StackedCards />
+			<FixedBackgroundGrid />
+			{/* <StackedCards /> */}
 		</div>
 	);
 }

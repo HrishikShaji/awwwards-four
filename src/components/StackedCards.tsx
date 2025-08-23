@@ -43,7 +43,11 @@ export default function StackedCards() {
 						}
 					}}
 					key={i} className="h-screen border-y-2 border-gray-800 w-full flex items-center justify-center">
-					<div key={i} style={{ zIndex: i * 5 }} className={`size-20 ${card.color} rounded-full`}></div>
+					<div className="grid grid-cols-20">
+						{Array.from({ length: 400 }).map((_, j) => (
+							<div className={`size-20 ${card.color}`} key={j}></div>
+						))}
+					</div>
 				</div>
 			))}
 		</div>
