@@ -45,25 +45,13 @@ export default function FixedBackgroundGrid() {
 				scrollTrigger: {
 					trigger: card,
 					start: (self) => {
-						return `${self.trigger?.clientTop + 200} ${self.trigger?.clientTop + 200 + 400}`
+						return `${self.trigger?.clientTop} ${self.trigger?.clientTop + 200 + 400}`
 					},
 					end: (self) => {
-						return `${self.trigger?.clientTop + 200 + 400} ${self.trigger?.clientTop + 200}`
+						return `${self.trigger?.clientTop} ${self.trigger?.clientTop + 200}`
 					},
 					scrub: 1,
 					markers: true,
-					// onEnter: () => {
-					// 	// Change color when entering section
-					// 	gridRefs.current.forEach(gridItem => {
-					// 		if (gridItem) {
-					// 			gsap.to(gridItem, {
-					// 				backgroundColor: cards[i].hexCode,
-					// 				duration: 0.5,
-					// 				ease: "power2.out"
-					// 			})
-					// 		}
-					// 	})
-					// },
 				}
 			})
 
