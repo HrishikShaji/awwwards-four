@@ -1,4 +1,4 @@
-import FixedBackgroundGrid from "@/components/FixedBackgroundGrid5";
+import FixedBackgroundGrid from "@/components/FixedBackgroundGrid6";
 import StackedCards from "@/components/StackedCards";
 import Image from "next/image";
 
